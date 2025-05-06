@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-api_key = os.getenv("OPEN_AI_API_KEYS")
+api_key = os.getenv("OPEN_AI_API_KEY")
 vector_id = os.getenv("VECTOR_ID")
 
 
