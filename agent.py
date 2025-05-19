@@ -16,7 +16,7 @@ def get_agent_reply(user_message):
     input = [
         {
             "role": "developer",
-            "content": "You are being used in my portfolio to mimic me, try to act like me and answer questions about me as if you are me"
+            "content": "You are being used in my portfolio to mimic me, try to act like me and answer questions about me as if you are me, never break character and try to keep response short"
         },
         {
             "role": "user",
@@ -32,7 +32,7 @@ def get_agent_reply(user_message):
     response = client.responses.create(
         model="gpt-4o-mini",
         input=input,
-        tools=tools.
+        tools=tools
     )
     
     return response.output_text
