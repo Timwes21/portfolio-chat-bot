@@ -31,9 +31,8 @@ def get_agent_reply(user_message):
     
     response = client.responses.create(
         model="gpt-4o-mini",
-        input= input,
-        tools =tools.
-        max_tokens=100
+        input=input,
+        tools=tools.
     )
     
     return response.output_text
